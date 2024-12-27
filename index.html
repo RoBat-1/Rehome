@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rehome</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -12,69 +13,53 @@
     
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+          <a></li>
+        <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i>
+        </a></li>
+        
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h1></h1>
-      <p>Your one-stop shop for amazing products!</p>
-    </section>
+   
 
     <section class="products">
-      <h2>Featured Products</h2>
+      <h2>Hot Offers</h2>
       <div class="product-grid">
         <div class="product-card">
-          <img src="https://via.placeholder.com/150" alt="Product 1">
-          <h3>Product 1</h3>
-          <p>$10.00</p>
-          <button>Add to Cart</button>
+          <img src="https://raw.githubusercontent.com/RoBat-1/Rehome/refs/heads/main/boule%20hand%20made.jpg" style="height: 150px; width: 150px; max-width: 100%; border-radius: 50%; padding: 5px;" alt="Product 1">
+          <h3>Christmas Hand Made Tree Ball</h3>
+          <p style="color: red; font-weight: bolder;">5 $ </p>
+          <a href="https://wa.me/96176365760?text=I'm%20interested%20in%20christmas%20box%20"
+          style="text-decoration: none; color: white; font-weight: bold; border: ;"> Order Now</a>
+          
         </div>
         <div class="product-card">
-          <img src="https://via.placeholder.com/150" alt="Product 2">
-          <h3>Product 2</h3>
-          <p>$15.00</p>
-          <button>Add to Cart</button>
+          <img src="https://raw.githubusercontent.com/RoBat-1/Rehome/refs/heads/main/frame%20wood.jpg" alt="Product 2">
+          <h3>Christmas Wood Frame</h3>
+          <p style="color: red; font-weight: bolder;">$15.00</p>
+          <a href="https://wa.me/96176365760?text=I'm%20interested%20in%20christmas%20wood%20frame%20"
+          style="text-decoration: none; color: white; font-weight: bold;"> Order Now</a>
         </div>
         <div class="product-card">
-          <img src="https://via.placeholder.com/150" alt="Product 3">
-          <h3>Product 3</h3>
-          <p>$20.00</p>
-          <button>Add to Cart</button>
+          <img src="https://raw.githubusercontent.com/RoBat-1/Rehome/refs/heads/main/santa%20zghir.jpg" alt="Product 3">
+          <h3>Christmas Kid</h3>
+          <p style="color: red; font-weight: bolder;">15$</p>
+          <a href="https://wa.me/96176365760?text=I'm%20interested%20in%20Christmas%20Kid%20"
+          style="text-decoration: none; color: white; font-weight: bold; border: black;"> Order Now</a>
         </div>
       </div>
     </section>
-    <section class="categories">
-      <h2>Shop by Categories</h2>
-      <div class="category-grid">
-        <div class="category-card">
-          <img src="https://via.placeholder.com/150" alt="Electronics">
-          <h3>Electronics</h3>
-        </div>
-        <div class="category-card">
-          <img src="https://via.placeholder.com/150" alt="Clothing">
-          <h3>Clothing</h3>
-        </div>
-        <div class="category-card">
-          <img src="https://via.placeholder.com/150" alt="Home Decor">
-          <h3>Home Decor</h3>
-        </div>
-        <div class="category-card">
-          <img src="https://via.placeholder.com/150" alt="Toys">
-          <h3>Toys</h3>
-        </div>
-      </div>
-    </section>
+    
 
   </main>
 
   <footer>
-    <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+    <p>&copy; 2024 Re Home. All rights reserved.</p>
   </footer>
     <style>
         /* General Styles */
@@ -82,32 +67,54 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
+  background-color: #FFD700;
 }
 
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #FFD700;
   color: white;
-  padding: 1rem 2rem;
+ 
 }
 
 header .logo {
-
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  position: relative;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s, background-color 0.3s;
 }
+
+/* Hover Effect */
+header nav ul li a:hover {
+  color: #333;
+  
+  border-radius: 5px;
+}
+
+
+
 
 .hero {
   text-align: center;
@@ -131,14 +138,14 @@ header nav ul li a {
 }
 
 .product-card {
-  border: 1px solid #ddd;
+  border: 1px solid black;
   padding: 1rem;
   text-align: center;
 }
 
 .product-card img {
   max-width: 100%;
-  height: auto;
+  height: 150px; width: 150px; max-width: 100%; border-radius: 50%; padding: 5px;
 }
 
 .product-card h3 {
@@ -184,10 +191,12 @@ header nav ul li a {
 }
 
 
+
+
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #333;
+ 
   color: white;
 }
     </style>
